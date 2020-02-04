@@ -73,6 +73,13 @@
     within:
       - Text.Pandoc.Readers.LaTeX
       - Text.Pandoc.Readers.Markdown
+- ignore:
+    name: "Use camelCase"
+    within:
+      - Text.Pandoc.Extensions
+      - Text.Pandoc.Lua.Marshalling.Version
+      - Text.Pandoc.Readers.Odt.ContentReader
+      - Text.Pandoc.Readers.Odt.Namespaces
 
 # Define some custom infix operators
 # - fixity: infixr 3 ~^#^~
