@@ -180,9 +180,8 @@ inlineToXWiki (Subscript lst) = do
   return $ ",," <> contents <> ",,"
 
 -- TODO: Not supported. Maybe escape to HTML?
-inlineToXWiki (SmallCaps lst) = do
-  contents <- inlineListToXWiki lst
-  return contents
+inlineToXWiki (SmallCaps lst) =
+  inlineListToXWiki lst
 
 inlineToXWiki (Quoted SingleQuote lst) = do
   contents <- inlineListToXWiki lst
